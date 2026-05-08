@@ -7582,7 +7582,7 @@ main {
 <ul>
 <li>What is the dimension of the space that my object lives in (2d/3d)?</li>
 <li>What are your variables (you need to declare them all except <code>x</code>)?</li>
-<li>How is the equation given? As an explicit equation in polar coordinates ($y=f(x)$, <code>plot</code>), as an implicit equation (<code>implicit_plot</code>), as an equation in polar coordinates ($r = f(\theta)$, <code>polar_plot</code>), as a parametric equation ($\vec{r}(t) = \langle x(t), y(t) \rangle$, <code>parametric_plot</code>) or as a vector field (<code>plot_vector_field</code>)?</li>
+<li>How is the equation given? As an explicit equation in cartesian coordinates ($y=f(x)$, <code>plot</code>), as an implicit equation (<code>implicit_plot</code>), as an equation in polar coordinates ($r = f(\theta)$, <code>polar_plot</code>), as a parametric equation ($\vec{r}(t) = \langle x(t), y(t) \rangle$, <code>parametric_plot</code>) or as a vector field (<code>plot_vector_field</code>)?</li>
 <li>Look at your output! Does it look like what you expected?</li>
 </ul>
 </div>
@@ -9882,7 +9882,7 @@ z_0 - 7z_1 - 4z_2 + 6z_3 + z_4 &amp;= 3 \\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">SR</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'z'</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>  <span class="c1"># A tuple of variables in the symbolic ring</span>
@@ -9890,7 +9890,7 @@ z_0 - 7z_1 - 4z_2 + 6z_3 + z_4 &amp;= 3 \\
                   <span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">7</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="mi">6</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="n">z</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==</span><span class="mi">3</span><span class="p">,</span>
                   <span class="mi">2</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==</span><span class="mi">10</span><span class="p">,</span>
                   <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">8</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="mi">9</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==</span><span class="mi">6</span><span class="p">,</span>
-                  <span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">6</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="mi">9</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==-</span><span class="mi">4</span><span class="p">])</span>
+                  <span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">6</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="mi">9</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">==-</span><span class="mi">4</span><span class="p">],</span><span class="n">z</span><span class="p">)</span>
 <span class="n">solution</span>
 </pre></div>
 </div>
@@ -9909,49 +9909,18 @@ z_0 - 7z_1 - 4z_2 + 6z_3 + z_4 &amp;= 3 \\
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[[z3 == (-89/78),
+<pre>[[z0 == (5/78),
   z1 == (-85/26),
-  z4 == (-35/39),
-  z0 == (5/78),
-  z2 == (119/39)]]</pre>
+  z2 == (119/39),
+  z3 == (-89/78),
+  z4 == (-35/39)]]</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5d95ed3a-46f2-4cf0-849b-030fb08eb71b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Annoying because it is out of order, this is a little bit better</span>
-<span class="nb">sorted</span><span class="p">(</span><span class="n">solution</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[[z3 == (-89/78),
-  z1 == (-85/26),
-  z4 == (-35/39),
-  z0 == (5/78),
-  z2 == (119/39)]]</pre>
-</div>
-</div>
-</div>
-</div>
-</div></div></section><section>
+</div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aac33553-1554-4ff8-9574-85cf4e45621e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -10884,8 +10853,8 @@ However, some operations are sensitive to the field.</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Four-color-theorem">Four color theorem<a class="anchor-link" href="#Four-color-theorem">¶</a></h1><h3 id="Theorem:-Any-planar-map-is-colorable-with-at-most-four-colors.">Theorem: Any planar map is colorable with at most four colors.<a class="anchor-link" href="#Theorem:-Any-planar-map-is-colorable-with-at-most-four-colors.">¶</a></h3><p><img alt="No description has been provided for this image" src="images/World_map_with_four_colours.png" width="750"> src="images/sage-logo.svg"</img></p>
-<p>Image credit: Fibonacci on Wikimedia Commons</p>
+<h1 id="Four-color-theorem">Four color theorem<a class="anchor-link" href="#Four-color-theorem">¶</a></h1><h3 id="Theorem:-Any-planar-map-is-colorable-with-at-most-four-colors.">Theorem: Any planar map is colorable with at most four colors.<a class="anchor-link" href="#Theorem:-Any-planar-map-is-colorable-with-at-most-four-colors.">¶</a></h3><p><img alt="No description has been provided for this image" src="images/World_map_with_four_colours.png" width="750">
+Image credit: Fibonacci on Wikimedia Commons</img></p>
 <p><em>Note that the theorem assumes that the regions are not disconnected (such as the United States and Alaska.</em></p>
 </div>
 </div>
@@ -10901,7 +10870,7 @@ However, some operations are sensitive to the field.</li>
 <li>Modify the graph to add a country (named 'water' or 'oceans').</li>
 <li>Add an edge between every country and the water. Then delete that edge for all landlocked countries.</li>
 <li>You may want to add an edge between water and countries that are adjacent to a large body of water, such as the Caspian Sea and the Black Sea.</li>
-<li>Use SageMath to find a prooer coloring of the graph (i.e. a coloring in which no two adjacent countries (including water) are of the same color.</li>
+<li>Use SageMath to find a proper coloring of the graph (i.e. a coloring in which no two adjacent countries (including water) are of the same color.</li>
 <li>Input the result in some map coloring software (such as mapchart.net), because the display in SageMath is not pretty.</li>
 </ul>
 </div>
